@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\img\BaconsaleKate.jpg" />
+    <Content Remove="wwwroot\img\IMG_2469.JPG" />
+    <Content Remove="wwwroot\img\joel.JPEG" />
+    <Content Remove="wwwroot\img\joel2.JPEG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="DateMe\bin\Release\net8.0\" />
     <Folder Include="DateMe\obj\Release\net8.0\refint\" />
     <Folder Include="DateMe\obj\Release\net8.0\ref\" />
@@ -17,6 +24,10 @@
     <None Include="DateMe.sln" />
     <None Include="DateMe\Movie_Collection.csproj" />
     <None Include="DateMe\Movie_Collection.csproj.user" />
+    <None Include="wwwroot\img\BaconsaleKate.jpg" />
+    <None Include="wwwroot\img\IMG_2469.JPG" />
+    <None Include="wwwroot\img\joel.JPEG" />
+    <None Include="wwwroot\img\joel2.JPEG" />
   </ItemGroup>
 
 </Project>
