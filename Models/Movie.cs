@@ -4,6 +4,8 @@ namespace Movies.Models
 {
     public class Movie
     {
+        [Key]
+        [Required]
         public int Mission06_MovieId { get; set; }
 
         public string Mission06_Title { get; set; }

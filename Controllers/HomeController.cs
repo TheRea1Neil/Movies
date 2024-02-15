@@ -23,16 +23,17 @@ namespace Movies.Controllers
         {
             return View();
         }
-
+        [HttpGet]
         public IActionResult Movie_Collection()
         {
             return View();
         }
 
+
         [HttpPost]
         public IActionResult SubmitMovie(Movie response)
         {
-            return View("Movie_Collection");
+            return View("Movie_Collection", response);
         }
 
     }
