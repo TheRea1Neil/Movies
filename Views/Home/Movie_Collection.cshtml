@@ -9,19 +9,19 @@
 
 <form asp-controller="Home" asp-action="SubmitMovie" method="post">
     <label asp-for="Mission06_Title" >Title:</label>
-    <input asp-for="Mission06_Title" />
+    <input asp-for="Mission06_Title" required />
     <br />
     <label asp-for="Mission06_Category">Category:</label>
-    <input asp-for="Mission06_Category" />
+    <input asp-for="Mission06_Category" required/>
     <br />
     <label asp-for="Mission06_Year">Year:</label>
-    <input asp-for="Mission06_Year" />
+    <input asp-for="Mission06_Year" required />
     <br />
     <label asp-for="Mission06_Director">Director:</label>
-    <input asp-for="Mission06_Director" />
+    <input asp-for="Mission06_Director" required/>
     <br />
     <label asp-for="Mission06_Rating">Rating:</label>
-    <select asp-for="Mission06_Rating">
+    <select asp-for="Mission06_Rating" required>
         <!-- Movie Ratings -->
         <option value="G">G</option>
         <option value="PG">PG</option>
@@ -40,8 +40,8 @@
     <br />
     <label asp-for="Mission06_Edited">Edited:</label>
     <select asp-for="Mission06_Edited">
-        <option value="true">Yes</option>
         <option value="false">No</option>
+        <option value="true">Yes</option>
     </select>
     
     <br />

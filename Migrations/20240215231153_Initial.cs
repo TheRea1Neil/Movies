@@ -21,9 +21,9 @@ namespace Movies.Migrations
                     Mission06_Director = table.Column<string>(type: "TEXT", nullable: false),
                     Mission06_Year = table.Column<int>(type: "INTEGER", nullable: false),
                     Mission06_Rating = table.Column<string>(type: "TEXT", nullable: false),
-                    Mission06_Edited = table.Column<bool>(type: "INTEGER", nullable: false),
-                    Mission06_Lent_To = table.Column<string>(type: "TEXT", nullable: false),
-                    Mission06_Notes = table.Column<string>(type: "TEXT", maxLength: 25, nullable: false)
+                    Mission06_Edited = table.Column<bool>(type: "INTEGER", nullable: true),
+                    Mission06_Lent_To = table.Column<string>(type: "TEXT", nullable: true),
+                    Mission06_Notes = table.Column<string>(type: "TEXT", maxLength: 25, nullable: true)
                 },
                 constraints: table =>
                 {
