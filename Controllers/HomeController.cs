@@ -33,6 +33,9 @@ namespace Movies.Controllers
         [HttpPost]
         public IActionResult SubmitMovie(Movie response)
         {
+            _context.Movies.Add(response);
+            _context.SaveChanges();
+
             return View("Movie_Collection", response);
         }
 
