@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Mvc;
 using Movies.Models;
 using System.Diagnostics;
@@ -6,27 +7,33 @@ namespace Movies.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private MovieContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(MovieContext context) //Constructor
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult Get_To_Know_Joel()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Movie_Collection()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
+
+        [HttpPost]
+        public IActionResult SubmitMovie(Movie response)
+        {
+            return View("Movie_Collection");
+        }
+
     }
 }

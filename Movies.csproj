@@ -17,7 +17,6 @@
     <Folder Include="DateMe\bin\Release\net8.0\" />
     <Folder Include="DateMe\obj\Release\net8.0\refint\" />
     <Folder Include="DateMe\obj\Release\net8.0\ref\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +27,19 @@
     <None Include="wwwroot\img\IMG_2469.JPG" />
     <None Include="wwwroot\img\joel.JPEG" />
     <None Include="wwwroot\img\joel2.JPEG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
