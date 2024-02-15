@@ -39,4 +39,36 @@ body {
     color: #fff;
     padding: 10px 0;
 }
+/* Make the navigation bar gold */
+.navbar {
+    background-color: #ffd700; /* Gold color */
+    border-color: #ffd700; /* Adjust border color to match the gold theme */
+}
 
+/* Fancy text style for navigation links */
+.navbar-nav .nav-link {
+    color: #000; /* Dark text for contrast */
+    font-family: 'Segoe UI', sans-serif; /* Choose a fancy font that suits your design */
+    font-size: 18px; /* Adjust size as needed */
+    text-shadow: 1px 1px 2px #fff; /* Soft white shadow for a lifted effect */
+}
+
+    /* Hover effects for navigation links */
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+        color: #fff; /* Lighter color on hover for contrast */
+        text-decoration: none; /* No underline on hover */
+        background-color: #b8860b; /* Darker shade of gold for background */
+    }
+
+/* Improve navbar branding */
+.navbar-brand {
+    color: #000; /* Make the brand name dark for contrast */
+    font-size: 24px; /* Larger font size for branding */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 1px 1px 2px #fff; /* Subtle shadow for depth */
+}
+
+    .navbar-brand:hover {
+        color: #fff; /* Lighter color on hover */
+        text-decoration: none; /* No underline on hover */
+    }
