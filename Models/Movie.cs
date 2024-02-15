@@ -18,9 +18,9 @@ namespace Movies.Models
         [Required]
         public string Mission06_Rating { get; set; }
 
-        public bool Mission06_Edited { get; set; }
+        public bool? Mission06_Edited { get; set; }
         public string? Mission06_Lent_To { get; set; }
         [StringLength(25)]
-        public string Mission06_Notes { get; set; }
+        public string? Mission06_Notes { get; set; }
     }
 }

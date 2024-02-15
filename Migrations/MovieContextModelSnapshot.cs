@@ -34,11 +34,9 @@ namespace Movies.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Mission06_Lent_To")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Mission06_Notes")
-                        .IsRequired()
                         .HasMaxLength(25)
                         .HasColumnType("TEXT");
 

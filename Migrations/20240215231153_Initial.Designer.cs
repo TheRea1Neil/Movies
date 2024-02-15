@@ -10,8 +10,8 @@ using Movies.Models;
 namespace Movies.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20240215224515_second")]
-    partial class second
+    [Migration("20240215231153_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,6 @@ namespace Movies.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Mission06_Lent_To")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Mission06_Notes")
