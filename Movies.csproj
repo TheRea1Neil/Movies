@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DateMe\bin\Release\net8.0\" />
+    <Folder Include="DateMe\obj\Release\net8.0\refint\" />
+    <Folder Include="DateMe\obj\Release\net8.0\ref\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="DateMe.sln" />
+    <None Include="DateMe\Movie_Collection.csproj" />
+    <None Include="DateMe\Movie_Collection.csproj.user" />
+  </ItemGroup>
+
+</Project>
