@@ -42,8 +42,7 @@ namespace Movies.Controllers
         public IActionResult MovieList ()
         {
             //linq
-           var movies = _context.Movies
-                .OrderBy(x => x.Mission06_Title).ToList();
+           var movies = _context.Movies.ToList();
             return View(movies);
         }
     }
