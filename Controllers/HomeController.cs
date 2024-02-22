@@ -39,5 +39,12 @@ namespace Movies.Controllers
             return View("Movie_Collection", response);
         }
 
+        public IActionResult MovieList ()
+        {
+            //linq
+           var movies = _context.Movies
+                .OrderBy(x => x.Mission06_Title).ToList();
+            return View(movies);
+        }
     }
 }
