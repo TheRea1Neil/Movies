@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace Movies.Models
 {
@@ -6,6 +7,8 @@ namespace Movies.Models
     {
         [Key]
         public int Mission07_CategoryId { get; set; }
-        public string Mission07_CategoryName { get; set; }
+        public string? Mission07_Category { get; set; }
+
+      
     }
 }

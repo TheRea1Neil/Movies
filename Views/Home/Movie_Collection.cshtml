@@ -6,15 +6,25 @@
 @model Movie
 
 <h1>Movie Collection</h1>
+@* asp-controller="Home" asp-action="SubmitMovie" *@
 
-<form asp-controller="Home" asp-action="SubmitMovie" method="post">
+<form  method="post">
+
+    <input type="hidden" asp-for="Mission06_MovieId" />
+
     <label asp-for="Mission06_Title" >Title:</label>
     <input asp-for="Mission06_Title" required />
     <br />
-    <label asp-for="Mission06_Category">Category:</label>
-    <input asp-for="Mission06_Category" required/>
+    <label asp-for="Mission07_CategoryId">Category:</label>
+    <select>
+        <option value="">Select a Category</option>
+        @foreach (Category c in ViewBag.Categories)
+        {
+            <option value="@c.Mission07_CategoryId">@c.Mission07_Category</option>
+        }
+    </select>
     <br />
-    <label asp-for="Mission06_Year">Year:</label>
+    <label asp-for="Mission06_Year" min="1888">Year:</label>
     <input asp-for="Mission06_Year" required />
     <br />
     <label asp-for="Mission06_Director">Director:</label>
@@ -40,8 +50,14 @@
     <br />
     <label asp-for="Mission06_Edited">Edited:</label>
     <select asp-for="Mission06_Edited">
-        <option value="false">No</option>
-        <option value="true">Yes</option>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select>
+    <br />
+    <label asp-for="CopiedToPlex">Copied To Plex:</label>
+    <select asp-for="CopiedToPlex">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
     </select>
     
     <br />

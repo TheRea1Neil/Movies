@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="DateMe.sln" />
     <None Include="wwwroot\img\BaconsaleKate.jpg" />
     <None Include="wwwroot\img\IMG_2469.JPG" />
     <None Include="wwwroot\img\joel.JPEG" />

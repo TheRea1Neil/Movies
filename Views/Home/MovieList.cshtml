@@ -12,7 +12,7 @@
 <table style="color : white;" class="table table-bordered">
     <thead>
         <tr>
-            <td>Movie Id</td>
+          
             <td>Category</td>
             <td>Title</td>
             <td>Year</td>
@@ -29,8 +29,8 @@
    @foreach (var movie in Model) {
         <tbody>
             <tr>
-                <td>@movie.Mission06_MovieId</td>
-                <td>@movie.Mission06_Category</td>
+        
+                <td>@movie.Mission07_CategoryId</td>
                 <td>@movie.Mission06_Title</td>
                 <td>@movie.Mission06_Year</td>
                 <td>@movie.Mission06_Director</td>
@@ -38,6 +38,9 @@
                 <td>@movie.Mission06_Edited</td>
                 <td>@movie.Mission06_Lent_To</td>
                 <td>@movie.Mission06_Notes</td>
+
+                <td><a class="btn btn-info" asp-controller="Home" asp-action="Edit" asp-route-id="@movie.Mission06_MovieId">Edit</a></td>
+                <td><a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id="@movie.Mission06_MovieId">Delete</a></td>
             </tr>
         </tbody>
    }
